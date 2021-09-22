@@ -6,8 +6,6 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 
-import dev.thinke.domain.api.DomainRoot;
-
 @Entity
 public class Actor {
     @Id
