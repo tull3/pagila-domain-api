@@ -14,7 +14,7 @@
 	<name>pagila-domain-api</name>
 	<description>Reference implementation for business domain APIs</description>
 	<properties>
-		<java.version>11</java.version>
+		<java.version>17</java.version>
 	</properties>
 	<dependencies>
 		<dependency>

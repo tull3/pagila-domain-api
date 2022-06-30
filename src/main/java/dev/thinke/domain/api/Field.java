@@ -1,16 +1,16 @@
 package dev.thinke.domain.api;
 
-public class Field<T> {
+public class Field {
 
     private final String name;
-    private final Class<T> type;
     private final Object value;
 
-    public Field(String name, Class<T> type, Object value) {
+    public Field(final String name, final Object value) {
         this.name = name;
-        this.type = type;
         this.value = value;
     }
-    
 
+    public <T> T getValue(final FieldMeta<T> meta) {
+        return meta.type().cast(this.value);
+    }
 }
